@@ -8,6 +8,7 @@
 
 package chess.gui;
 
+import chess.part.Pawn;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -18,6 +19,7 @@ public class MainChess extends Application {
 	public void start(Stage stage) {
 		MainMenu mm = new MainMenu();
 		ChessBoard cb = new ChessBoard();
+		cb.getChildren().add(new Pawn(true));
 		Scene s = new Scene(cb);
 		stage.setTitle("Meringue Chess");
 		
