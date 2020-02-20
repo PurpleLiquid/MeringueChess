@@ -2,10 +2,11 @@ package chess.part;
 
 import javafx.scene.image.Image;
 import javafx.scene.paint.ImagePattern;
-import javafx.scene.shape.Rectangle;
 
-public class Pawn extends Rectangle {
-	public Pawn(boolean light) {
+public class Pawn extends ChessPiece {
+	public Pawn(boolean light, int tileSize, int x, int y) {
+		super(tileSize, x, y);
+		
 		Image image = null;
 		
 		if(light) {
@@ -17,8 +18,12 @@ public class Pawn extends Rectangle {
 		ImagePattern imagePattern = new ImagePattern(image);
 		
 		setFill(imagePattern);
-		setHeight(200);
-		setWidth(200);
-		relocate(200, 200);
 	}
+	
+	@Override
+	public void movePiece() {}
+	
+	@Override
+	public void overtakePiece(ChessPiece cp) {}
+	
 }

@@ -2,10 +2,11 @@ package chess.part;
 
 import javafx.scene.image.Image;
 import javafx.scene.paint.ImagePattern;
-import javafx.scene.shape.Rectangle;
 
-public class King extends Rectangle {
-	public King(boolean light) {
+public class King extends ChessPiece {
+	public King(boolean light, int tileSize, int x, int y) {
+		super(tileSize, x, y);
+		
 		Image image = null;
 		
 		if(light) {
@@ -18,4 +19,10 @@ public class King extends Rectangle {
 		
 		setFill(imagePattern);
 	}
+	
+	@Override
+	public void movePiece() {}
+	
+	@Override
+	public void overtakePiece(ChessPiece cp) {}
 }
