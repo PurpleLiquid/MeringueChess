@@ -11,7 +11,7 @@ public class ChessPiece extends Rectangle {
 	}
 	
 	// MUST OVERRIDE for Polymorphism
-	public void movePiece() {}
+	public void movePiece(double x, double y) {}
 	
 	// MUST OVERRIDE for Polymorphism
 	public void overtakePiece(ChessPiece cp) {}

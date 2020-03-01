@@ -7,7 +7,7 @@ import chess.part.ChessTile;
 import chess.part.*;
 
 public class ChessBoard extends Pane {
-	private final int TILE_SIZE = 100;
+	public final static int TILE_SIZE = 100;
 	private final int HEIGHT = 8;
 	private final int WIDTH = 8;
 	

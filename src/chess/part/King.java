@@ -21,7 +21,7 @@ public class King extends ChessPiece {
 	}
 	
 	@Override
-	public void movePiece() {}
+	public void movePiece(double x, double y) {}
 	
 	@Override
 	public void overtakePiece(ChessPiece cp) {}
